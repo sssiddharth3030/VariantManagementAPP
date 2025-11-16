@@ -1,5 +1,5 @@
 # ui5
-./app/zapp/node_modules/
+./app/zapp/node_modules
 ./app/zappdist/
 ./app/zapp/.scp/
 ./app/zapp/.env
@@ -12,4 +12,5 @@
 
 # python 
 ./pyenv/*
+./server/__pycache__
 ./server/__pycache__/*
