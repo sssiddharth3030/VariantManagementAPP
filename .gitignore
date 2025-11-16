@@ -1,0 +1,15 @@
+# ui5
+./app/zapp/node_modules/
+./app/zappdist/
+./app/zapp/.scp/
+./app/zapp/.env
+./app/zapp/Makefile*.mta
+./app/zapp/mta_archives
+./app/zapp/mta-*
+./app/zapp/resources
+./app/zapp/archive.zip
+./app/zapp/.*_mta_build_tmp
+
+# python 
+./pyenv/*
+./server/__pycache__/*

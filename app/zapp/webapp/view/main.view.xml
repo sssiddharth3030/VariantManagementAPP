@@ -1,0 +1,132 @@
+<mvc:View
+    controllerName="zapp.form.com.zapp.controller.main"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:form="sap.ui.layout.form"
+    xmlns:f="sap.f"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <!-- <Panel
+            headerText="m.VariantManagement using declarative items aggregation"
+        >
+            <headerToolbar>
+                <OverflowToolbar style="Clear">
+                    <Title
+                        text="App to trigger email with summarized data for RunDate"
+                        level="H1"
+                    />
+                    <ToolbarSpacer />
+
+                </OverflowToolbar>
+            </headerToolbar>
+        </Panel> -->
+
+        <FlexBox
+            height="100%"
+            alignItems="Start"
+            justifyContent="Center"
+        >
+            <f:Card
+                class="sapUiLargeMargin"
+                width="700px"
+            >
+                <f:content>
+                    <form:SimpleForm editable="true">
+                        <Label
+                            text="Email"
+                            labelFor="email"
+                            class="sapUiSmallMarginBottom"
+                        />
+
+                        <MultiInput
+                            id="email"
+                            placeholder="Enter Email"
+                            width="80%"
+                            valueHelpRequest=".onMultipleConditions"
+                            class="sapUiSmallMarginBottom"
+                        />
+
+                        <Label
+                            text="Run Date"
+                            labelFor="runDate"
+                            class="sapUiSmallMarginBottom"
+                        />
+
+                        <DatePicker
+                            width="90%"
+                            id="DP8"
+                            placeholder="Enter Run Date"
+                            change="handleChange"
+                            class="sapUiSmallMarginBottom"
+                            showFooter="true"
+                        />
+
+                        <Button
+                            text="Clear Date"
+                            width="120px"
+                            press="onClearDate"
+                        />
+                    </form:SimpleForm>
+                </f:content>
+            </f:Card>
+        </FlexBox>
+
+        <footer>
+            <OverflowToolbar>
+                <VariantManagement
+                    id="vm"
+                    select="onSelect"
+                    save="onSave"
+                    manage="onManage"
+                    selectedKey="Standard"
+                    defaultKey="Standard"
+                    showFooter="true"
+                    popoverTitle="Choose Variant"
+                    supportDefault="false"
+                    supportFavorites="false"
+                    supportContexts="false"
+                    supportApplyAutomatically="false"
+                    supportPublic="false"
+                >
+                    <items>
+                        <VariantItem
+                            key="Standard"
+                            title="Standard"
+                            visible="true"
+                            executeOnSelect="false"
+                            rename="false"
+                            changeable="false"
+                            remove="false"
+                            sharing="Public"
+                        />
+                    </items>
+                </VariantManagement>
+
+                <Button
+                    text="Toggle Modify View"
+                    press="onPress"
+                    id="vm_toggle"
+                />
+
+                <Button
+                    type="Critical"
+                    text="Reload Variant Management"
+                    press="onConnect"
+                    id="vm_retry"
+                />
+
+                <ToolbarSpacer />
+
+                <Button
+                    type="Emphasized"
+                    id="submit"
+                    text="Submit"
+                    press="onSubmit"
+                />
+            </OverflowToolbar>
+        </footer>
+    </Page>
+</mvc:View>

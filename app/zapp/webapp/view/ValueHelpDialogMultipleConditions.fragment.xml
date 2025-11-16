@@ -1,0 +1,13 @@
+<core:FragmentDefinition
+	xmlns="sap.ui.comp.valuehelpdialog"
+	xmlns:core="sap.ui.core">
+	<ValueHelpDialog
+		title="User Name"
+		ok=".onMultipleConditionsValueHelpOkPress"
+		cancel=".onMultipleConditionsCancelPress"
+		key="UserName"
+		descriptionKey="Name"
+		supportRanges="true"
+		afterClose=".onMultipleConditionsAfterClose"
+		supportRangesOnly="true"/>
+</core:FragmentDefinition>

@@ -1,0 +1,26 @@
+{
+"fields": [
+    {
+      "fieldName": "String",
+      "values": [
+        {
+          "SIGN": "I",
+          "OPT": "EQ",
+          "LOW": "Some String",
+          "HIGH": ""
+        }
+      ]
+    },
+    {
+      "fieldName": "storeInt",
+      "values": [
+        {
+          "SIGN": "I",
+          "OPT": "EQ",
+          "LOW": "12321",
+          "HIGH": "0"
+        }
+      ]
+    }
+  ]
+}
